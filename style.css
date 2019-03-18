@@ -1,10 +1,29 @@
 #Main{
-  background:  #d6d6d6;
+  background:  #f6f6f6;
   position:  absolute;
   margin-left: 7.5%;
   width: 85%;
   height: 100%;
 }
 body{
-  background:  #4546f5;
+    font-family: Times;
+    background:  #004f12;
+}
+h1{
+
+}
+li{
+    line-height:1.5;
+    font-style: oblique;
+}
+img{
+width:80%;
+padding-left:10%;
+}
+.gr{
+  text-align: left;;}
+}
+
+
+
 }
