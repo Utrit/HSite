@@ -7,6 +7,15 @@
   width: 85%;
   position:fixed;
 }
+#IMain{
+  opacity: 0.85;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #074d08  10%, #eef545 90%);
+  position:  absolute;
+  margin-left: 7.5%;
+  width: 85%;
+  position:fixed;
+}
 body{
       background-repeat: no-repeat;
       background-color: #037515;

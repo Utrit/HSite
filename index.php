@@ -8,7 +8,7 @@
  </head>
   <body background="JPG\bg.jpg"> <!--background="C:\Users\Учитель\Desktop\HSite\HSite\JPG\tenor.gif" --> <!--background="JPG\gg.jpg" -->
 
-    <div class="gr" id="IMain">
+    <div class="gr" id="Main">
       <form name="test" method="GET" action="fill.php">
        <p>
         <b>Добавить Цветок</b><br>
@@ -16,7 +16,7 @@
        </p>
        <input type="submit" value="Отправить">
       </form>
-      <ul>
+      
 
       <?php
       require_once 'login.php';
@@ -24,7 +24,7 @@
       $query ="SELECT * FROM plants";
       $result=mysqli_query($link,$query);
       while ($row=mysqli_fetch_array($result)){
-        echo "<li><a href=flower.php?ID=" ;
+        echo "<li ><a href=flower.php?ID=" ;
         echo $row['ID'];
         echo ">";
         echo $row['Name'];
@@ -33,7 +33,7 @@
       mysqli_close($link);
       ?>
 
-    </ul>
+
      </div>
  </body>
 </html>

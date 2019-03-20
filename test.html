@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Hackosite</title>
+   <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+  <body> <!--background="C:\Users\Учитель\Desktop\HSite\HSite\JPG\tenor.gif" --> <!--background="JPG\gg.jpg" -->
+    <script >
+      function $_GET(key) {
+    var p = window.location.search;
+    p = p.match(new RegExp(key + '=([^&=]+)'));
+    return p ? p[1] : '1';
+}
+    fetch('/hsite/getdata.php?ID='+$_GET('ID'))
+      .then(function(response){
+        return response.json();
+      })
+      .then(function(data) {
+        console.log(data)
+      })
+      </script>
+ </body>
+</html>
